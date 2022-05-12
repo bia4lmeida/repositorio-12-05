@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+margin:0;
+background-image: url("etec1.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: bottom right;
+background-size: 200px;
+}
+
+h1{
+margin:0;
+font-family:Brush Script MT, Brush Script Std, cursive;
+text-shadow: 3px 2px MediumSeaGreen;
+text-align: center;
+background-color: green;
+}
+
+p{
+font-family: URW Chancery L, cursive;
+text-indent: 25px;
+}
+
+
+
+div{
+margin-left:20%;
+padding:0.1px 16px;
+text-align:justify;
+}
+
+ul{
+list-style-type; none;
+margin:0;
+padding: 0;
+width: 20%;
+background-color: #333;
+position: fixed;
+height: 100%;
+}
+
+li a {
+display: block;
+color: white;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+.active{
+background-color: #4CAF50;
+color: white;
+}
+
+li a:hover;not(.active){
+background-color: red;
+color: white;
+}
+
+label, h1, p{
+margin-left: 21%;
+}
+
+</style>
+
+<body>
+
+<ul>
+<li><a class="active" href="#inicio">Inicio</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#professor">Professor</a></li>
+<li><a href="#aluno">Aluno</a></li>
+<li><a href="#cursos">Cursos</a></li>
+<li><a href="#sobre">Sobre a Etec</a></li>
+</ul>
+
+
+<h1> Etec Arruda Mello Presidente Prudente </h1>
+<p>Escola Técnica Estadual (ETEC) é um programa governamental que objetiva a formação de 
+profissões de nível técnico. Logo, se você já terminou ou está terminando o ensino médio, 
+ela surge como opção para buscar melhores condições de vida
+O ensino técnico é uma formação que visa a habilitação para profissões de menor complexidade, 
+geralmente ligadas ao nível operacional dos negócios e órgãos públicos. Nessa modalidade, o 
+estudante aprende tarefas mais simples, em que planejamento, criatividade, inovação e estratégia
+são aspectos secundários.
+
+
+ 
+<form action="/action_page.php">
+<fieldset>
+<label for=datemax> digite uma data de 2010-01-01 </label>
+<input type="date" id=datemax name="datemax" max="2009-12-31"><br>
+<br>
+<label for=sobre> Sobrenome: </label>
+<input type="text" id=sobre name="Sobrenome" value="" autofocus placeholder="escreva aqui"><br>
+<br>
+<label for=email> E-mail: </label>
+<input type="email" id=email name="email" value=""><br>
+<br>
+<label for=senha> Senha: </label>
+<input type="password" id=senha name="Senha" value=""><br>
+</fieldset>
+
+
+<input type="radio" id="casado" name="est_civil" value="casado"><br>
+<label for="casado">Casado</label>
+<input type="radio" id="solteiro" name="est_civil" value="solteiro"><br>
+<label for="solteiro">Solteiro</label>
+<input type="radio" id="namorando" name="est_civil" value="namorando"><br>
+<label for="namorando">Namorando</label>
+<br><br>
+
+
+
+
+<label for=qtd> Idade </label> ( 15 até 30 anos):
+<input type="number" id=qtd name="qtd" min="15"max="30"><br>
+<br><br>
+
+
+
+<label>
+Cursos:
+<select name="cursos">
+<option value="ensino">Ensino Médio</option>
+<option value="curso">Curso Tecnico</option>
+<option value="superior">Ensino Superior</option>
+<option value="enem">Enem</option>
+</select>
+<label>
+</form><br><br>
+
+
+
+
+
+<label>
+Selecione um Arquivo:
+Foto do RG (frente e verso)
+Comprovante de Residencia</label>
+<input type="file" name="myFile" multiple>
+<input type="submit">
+</form>
+
+
+
+
+
+</body>
+</html>
+
+
+ 
